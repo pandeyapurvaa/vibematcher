@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Matching App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Vibe Matching ✨</h1>
+        
+        <div class="input-section">
+            <div class="person">
+                <h3>Person 1</h3>
+                <input type="text" id="name1" placeholder="Enter first name">
+                <select id="gender1">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="person">
+                <h3>Person 2</h3>
+                <input type="text" id="name2" placeholder="Enter first name">
+                <select id="gender2">
+                    <option value="">Select Gender</option>g
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <button onclick="calculateMatch()">Check Vibe Match!</button>
+
+        <div id="result" class="result-hidden">
+            <h2>Vibe Match Result</h2>
+            <div class="match-percentage">
+                <span id="percentage">0</span>%
+            </div>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
